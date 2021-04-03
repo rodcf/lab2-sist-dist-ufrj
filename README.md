@@ -6,7 +6,9 @@ O objetivo deste Laboratório é desenvolver uma aplicação distribuída básic
 A aplicação que vamos desenvolver consiste em contar as ocorrências das palavras em um arquivo texto.
 
 • Entrada: usuário informa o nome do arquivo texto.
+
 • Saída (com sucesso): a aplicação exibe a lista das 10 palavras mais encontradas no arquivo, ordenadas da mais frequente para a menos frequente, e o número de ocorrências de cada palavra.
+
 • Saída (com erro): informa que o arquivo solicitado não foi encontrado.
 
 Proposta de arquitetura de sistema:
