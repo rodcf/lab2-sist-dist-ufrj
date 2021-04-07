@@ -42,11 +42,11 @@ while True:
 
         try:
             # le o arquivo de nome igual a mensagem recebida
-            with open(receivedMsgString, 'rt') as txtFile:
+            with open('arquivos/' + receivedMsgString, 'rt') as txtFile:
                 
                 # instancia um dicionario do tipo Counter a partir da lista de palavras contidas no arquivo
                 # onde cada par (chave, valor) representa uma palavra e o numero de vezes que ela aparece
-                counter = Counter(txtFile.read().split())
+                counter = Counter(txtFile.read().lower().split())
 
                 # pega a lista das n palavras mais frequentes do dicionario, onde n é NUMBER_OF_WORDS
                 mostCommonWords = counter.most_common(NUMBER_OF_WORDS)
